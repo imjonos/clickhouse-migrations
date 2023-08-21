@@ -1,0 +1,44 @@
+{
+    "name": "imjonos/clickhouse-migrations",
+    "description": "PHP Clickhouse Migrations",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eugeny Nosenko",
+            "email": "info@toprogram.ru",
+            "homepage": "https://toprogram.ru"
+        }
+    ],
+    "homepage": "https://github.com/imjonos/clickhouse-migrations",
+    "keywords": [
+        "DB",
+        "Clickhouse",
+        "Clickhouse migrations",
+        "Migrations",
+        "MySQL",
+        "PDO",
+        "PHP"
+    ],
+    "require": {
+        "php": "^8.1",
+        "imjonos/db-adapters": "dev-master"
+    },
+    "bin": [
+        "bin/clickhouse-migrate"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Nos\\ClickhouseMigrations\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+            ]
+        }
+    }
+}
