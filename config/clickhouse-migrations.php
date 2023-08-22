@@ -2,12 +2,12 @@
 
 return [
     'adapter' => \Nos\DbAdapters\ClickHouseDbClientAdapter::class,
-    'host' => 'localhost',
+    'host' => 'clickhouse',
     'port' => 8123,
-    'database' => 'default',
+    'database' => 'test',
     'username' => 'default',
     'password' => '',
-    'dir' => '',
-    'history_file' => '',
-    'bindings' => []
+    'dir' => __DIR__ . '/../database/migrations',
+    'history_file' => __DIR__ . '/../database/clickhouse_migrations.log',
+    'bindings' => ['redpanda:9092' => '{KAFKA_BROKER_LIST}', 'local_' => '{APP_ENV}']
 ];
