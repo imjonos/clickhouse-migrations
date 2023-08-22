@@ -22,7 +22,7 @@ $adapter = new $config['adapter'](
     $config['port'] ?? 0
 );
 
-$service = new Nos\DbAdapters\Services\ClickHouseMigrationService(
+$service = new \Nos\DbAdapters\Services\ClickHouseMigrationService(
     $adapter,
     $config['history_file'] ?? '',
     $config['dir'] ?? '',
