@@ -1,6 +1,9 @@
 # Clickhouse migrations
 
-Simple php clickhouse migrations
+Simple PHP Clickhouse migrations <br>
+Supported 2 connection types: <br>
+PDO - \Nos\DbAdapters\MysqlDbClientAdapter::class <br>
+HTTP (smi2/phpclickhouse) - \Nos\DbAdapters\ClickHouseDbClientAdapter::class <br>
 
 ## Installation
 
@@ -27,7 +30,7 @@ Config example: <br>
 
 ``` php
 return [
-    'adapter' => \Nos\DbAdapters\ClickHouseDbClientAdapter::class,
+    'adapter' => \Nos\DbAdapters\ClickHouseDbClientAdapter::class, // \Nos\DbAdapters\MysqlDbClientAdapter::class
     'host' => 'clickhouse',
     'port' => 8123,
     'database' => 'test',
@@ -68,6 +71,8 @@ AS
 SELECT *
 FROM users_queue;
 ```
+
+https://github.com/imjonos/clickhouse-migrations/blob/master/database/migrations/1_create_users_table.sql <br>
 
 ## Contributing
 
