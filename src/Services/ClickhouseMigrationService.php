@@ -1,11 +1,11 @@
 <?php
 
-namespace Nos\DbAdapters\Services;
+namespace Nos\ClickhouseMigrations\Services;
 
 use Nos\DbAdapters\Interfaces\DbClientAdapterInterface;
 use Throwable;
 
-final readonly class ClickHouseMigrationService
+final readonly class ClickhouseMigrationService
 {
     public function __construct(
         private DbClientAdapterInterface $clickHouseDbClientAdapter,
