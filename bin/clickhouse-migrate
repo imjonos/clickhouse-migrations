@@ -1,9 +1,9 @@
 #!/usr/bin/env php
 <?php
 
-require_once __DIR__ . '/../../autoload.php';
+require_once __DIR__ . '/../../../autoload.php';
 $configFiles = [
-    __DIR__ . '/../../config/clickhouse-migrations.php',
+    __DIR__ . '/../../../../config/clickhouse-migrations.php',
     __DIR__ . '/../config/clickhouse-migrations.php',
 ];
 $config = [];
