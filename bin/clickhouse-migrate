@@ -10,7 +10,7 @@ $config = [];
 
 foreach ($configFiles as $configFile) {
     if (file_exists($configFile)) {
-        $config = $configFile;
+        $config = require $configFile;
         break;
     }
 }
